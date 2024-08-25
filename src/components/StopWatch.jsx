@@ -17,7 +17,7 @@ const StopWatch = () => {
             return prevSec + 1;
           }
         });
-      }, 100);
+      }, 1000);
     }
 
     return () => clearInterval(intervalId);
@@ -28,11 +28,13 @@ const StopWatch = () => {
   const handleRestart = () => {
     setMinute(0);
     setSecond(0);
+    setIsActive(false);
   };
   return (
     <div className="container">
       <h1>
-        {minute} Min : {second} Sec
+        {minute.toString().padStart(2, "0")} Min :{" "}
+        {second.toString().padStart(2, "0")} Sec
       </h1>
       <div className="btn__container">
         <button
@@ -48,7 +50,7 @@ const StopWatch = () => {
           Pause
         </button>
         <button className="btn" onClick={handleRestart}>
-          Restart
+          Reset
         </button>
       </div>
     </div>
