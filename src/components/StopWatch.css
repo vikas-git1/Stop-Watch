@@ -1,0 +1,74 @@
+/* StopWatch.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f4f8;
+}
+
+.container {
+  /* border: 2px solid black; */
+  height: 30vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(47, 0, 255, 0.297);
+  border-radius: 15px;
+  box-shadow: 0 0 15px 5px white;
+}
+h1 {
+  font-size: 2.5rem;
+  color: #f9f6f6;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn:active {
+  background-color: #004085;
+}
+
+.btn:disabled {
+  background-color: #c6c6c6;
+  cursor: not-allowed;
+}
+
+button + button {
+  margin-left: 10px;
+}
+
+h1,
+.btn-container {
+  text-align: center;
+}
+
+.active_start_btn {
+  background-color: red;
+}
+
+.active_pause_btn {
+  background-color: green;
+}
