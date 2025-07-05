@@ -1,4 +1,5 @@
 import "./App.css";
+import Practice from "./components/Practice";
 import StopWatch from "./components/StopWatch";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <h1>Stop Watch</h1>
       <StopWatch />
+      {/* <Practice /> */}
     </>
   );
 }
